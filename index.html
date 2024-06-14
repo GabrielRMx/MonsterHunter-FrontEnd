@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Hunter: Monsters List</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="favicon.png"/>
+</head>
+<body>
+    <div class="text-center">
+        <h1>Monster Hunter: Monsters List</h1>
+    </div>
+    <div class="container">
+        <table id="monsters-table" class="table table-striped table-bordered shadow">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attribute</th>
+                <th>Weakness</th>
+                <th>Rank</th>
+        </table>
+    </div>
+    <div class="button-container">
+        <a class="btn btn-primary shadow" style="color: white;" href="newmonster.html" target="_parent" onclick="addMonster()">Add New Monster</a>
+        <button class="btn btn-primary shadow" onclick="updateMonster()">Update Monster</button>
+        <button class="btn btn-primary shadow" onclick="deleteMonster()">Delete Monster</button>
+    </div>
+</body>
+</html>

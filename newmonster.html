@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding New Monster</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="favicon.png"/>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-header">
+                <h2 class="mb-0">Agregar Nuevo Monstruo</h2>
+            </div>
+            <div class="card-body">
+                <form id="addMonsterForm">
+                    <div class="form-group">
+                        <label for="newName">Nombre:</label>
+                        <input type="text" class="form-control" id="newName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newType">Tipo:</label>
+                        <input type="text" class="form-control" id="newType" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newAttribute">Atributo:</label>
+                        <input type="text" class="form-control" id="newAttribute" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newWeakness">Debilidad:</label>
+                        <input type="text" class="form-control" id="newWeakness" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newRank">Rango:</label>
+                        <input type="text" class="form-control" id="newRank" required>
+                    </div>
+                    <button type="submit" onclick="addNewMonster()" class="btn btn-success">Agregar Monstruo</button>
+                    <a class="btn btn-primary shadow" style="color: white;" href="index.html" target="_parent">Volver</a>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
